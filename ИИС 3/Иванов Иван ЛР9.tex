@@ -1,0 +1,85 @@
+% "Лабораторная работа 2"
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+% report, book
+
+%  Русский язык
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+
+
+\usepackage{wasysym}
+
+
+%Заговолок
+\author{Иванов Иван ИВТ 3 курс}
+\title{Лабораторная работа 9\\
+Создание таблицы средствами \LaTeX{}}
+\date{\today}
+
+
+\begin{document} % начало документа
+\maketitle
+\newpage
+
+\section{Создание таблицы}
+\subsection{Инструменты}
+\begin{enumerate}
+\item Вкладка Помощник
+\item Быстрая таблица
+\end{enumerate}
+\subsection{Шаг 1}
+Выберите количество столбцов и количество строк\\
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+- & - & - & - & - \\
+\hline
+- & - & - & - & - \\
+\hline
+- & - & - & - & - \\
+\hline
+- & - & - & - & - \\
+\hline
+- & - & - & - & - \\
+\hline
+\end{tabular}
+
+\subsection{Шаг 2}
+Введите текст в таблицу\\
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+№&Критерии&Параметры&-&-\\
+\hline
+-&-&выполнено полностью&выполнено частично&не выполнено\\
+\hline
+1&-&-&-&-\\
+\hline
+2&-&-&-&-\\
+\hline
+3&-&-&-&-\\
+\hline
+\end{tabular}
+
+\subsection{Шаг 3}
+Объедините ячейки\\
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+№&Критерии&\multicolumn{3}{|c|}{Параметры}\\
+\hline
+-&-&выполнено полностью&выполнено частично&не выполнено\\
+\hline
+1&-&-&-&-\\
+\hline
+2&-&-&-&-\\
+\hline
+3&-&-&-&-\\
+\hline
+\end{tabular}
+\end{document} % конец документа

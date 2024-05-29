@@ -1,0 +1,90 @@
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\title{Инвариантная самостоятельная работа 5
+
+Команды для создания текстового документа}
+\author{Иванов Иван}
+\date{18 февраля 2022}
+\begin{document}
+\maketitle
+\newpage
+
+pagestyle\{empty\} - стиль страницы без номера
+
+pagestyle\{myheadings\} — стиль страницы с номером в правом
+верхнем углу
+
+setcounter\{page\}\{3\} — начать нумерацию страниц с 3
+
+\section{Выравнивание — меню Insert–Environments}
+
+Выравнивание по центру - begin\{center\} Текст end\{center\}
+
+Выравнивание по правому краю - begin\{flushright\} Текст end\{flushright\}
+
+Выравнивание по левому краю - begin\{flushleft\} Текст end\{flushleft\}
+
+vspace\{5mm\} — мягкий вертикальный отступ (в некоторых случаях
+игнорируется, например, если попадает на начало страницы)
+
+vspace*\{10mm\} — вертикальный отступ
+
+hspace\{20mm\} — мягкий горизонтальный отступ (в некоторых
+случаях игнорируется, например, если попадает на конец строки).
+
+hspace*\{20mm\} — Горизонтальный отступ.
+
+newline — переход на новую строку внутри одного абзаца,
+предыдущая строка не растягивается.
+
+linebreak — переход на новую строку внутри абзаца, предыдущая
+строка растягивается по ширине.
+
+pagebreak — переход на новую страницу, предыдущая растягивается
+newpage — переход на новую страницу
+
+\section{Размеры шрифта}
+
+footnotesize — \footnotesize Размер шрифта \normalsize
+
+small — \small Размер шрифта \normalsize
+
+normalsize — \normalsize Размер основного текста
+
+large — \large Размер шрифта \normalsize
+
+Large — \large Размер шрифта \normalsize
+
+LARGE — \large Размер шрифта \normalsize
+
+huge — \huge Размер шрифта \normalsize
+
+Huge — \huge Размер шрифта \normalsize
+
+\section{Начертание шрифта}
+
+Панель инструментов Typeface.
+
+\{bf Текст \} или textbf\{Bold\} (меню Typeface) — {\bf полужирный текст}
+
+
+\{it Текст\} или textit\{italic\} (меню Typeface) — {\it курсив}
+
+textbf\{textit\{Текст\}\} — \textbf{\textit {полужирный курсив}}
+
+underline\{Текст\} (меню Math) — \underline{подчеркивание}
+
+Линии разной толщины rule\{35mm\}\{.3pt\} и rule\{35mm\}\{.10pt\}
+
+\rule{35mm}{.3pt}
+
+\rule{35mm}{.10pt}
+
+tableofcontents — создает содержание
+\end{document}
