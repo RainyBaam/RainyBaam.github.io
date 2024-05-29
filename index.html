@@ -1,36 +1,116 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Портфолио </title>
-  <h1 align="center">Веб-портфолио</h1>
-  <h2 align="center">Иванов Иван Андреевич, студент РГПУ им. Герцена</h2>
-  <link rel="stylesheet" href="styles.css">
+  <title>Иванов Иван Андреевич - Портфолио</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<header>
-        <div class="container">
-            <h1>Дициплины</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Дициплины</a></li>
-                    <li class="dropdown">
-                        <a href="#projects" class="dropbtn">Projects</a>
-                        <div class="dropdown-content">
-                            <a href="project1.html">Project 1</a>
-                            <a href="project2.html">Project 2</a>
-                            <!-- Add more projects as needed -->
-                        </div>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-</header>
 <body>
-      <li><h2>Дисциплины</h2></ul>li>
-    <h2>Практики</h2>
-          <p>Description of Project 1.</p>
-    <h2>Курсовые работы</h2>
-          <p>Description of Project 2.</p>
+  <div class="container mt-5">
+    <header class="text-center">
+      <h1 class="display-4">Иванов Иван Андреевич</h1>
+      <p class="lead">Студент РГПУ им.А.И.Герцена, факультет ИИТиТО ИВТ(1)/19</p>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="my-4">Список дисциплин</h2>
+
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1 курс
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/folders/1KMDiEB3tx3NBzp06WA1gU8C0C4XB6-uL">Дискретная математика</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1CKIytAnNlf7u9yME4y9n_6AImiLUQcdT">Линейная алгебра и теория матриц</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1CKIytAnNlf7u9yME4y9n_6AImiLUQcdT">Информационные технологии в математике</a></li>                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2 курс
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/folders/1Acg2bY6TiIzNAisEdJDlYEMB9vVInTJN">Аналитическая геометрия</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1CKIytAnNlf7u9yME4y9n_6AImiLUQcdT">Линейная алгебра и теория матриц</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1eeyg9vWfrLlURAXA2Hq7kTMtJ6hW5UVH">Основы теории вероятности</a></li>
+                  <li><a href="https://github.com/lywko/progPy">Программирование</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3 курс
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/folders/1kk2BOSNoimak2FNvgf4Vq9NhsQcEv6Ha">Интегралы и дифференциальные уравнения</a></li>
+                  <li><a href="https://github.com/lywko/progPy">Программирование</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  4 курс
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/folders/1VHmpEM0XEHhsBfRm5_TW9LUKbi1FvMzH">Базы данных</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1kk2BOSNoimak2FNvgf4Vq9NhsQcEv6Ha">Интегралы и дифференциальные уравнения</a></li>
+                  <li><a href="https://github.com/lywko/progPy">Программирование</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="my-4">Курсовые работы</h2>
+          <div class="card">
+            <div class="card-header" id="CourseWorks">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseAchievements" aria-expanded="true" aria-controls="collapseAchievements">
+                  Курсовые работы
+                </button>
+              </h2>
+            </div>
+            </div>
+          
+      </section>
+    </main>
+  </div>
 </body>
 </html>
